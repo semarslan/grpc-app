@@ -19,6 +19,7 @@ public class UserService extends UserServiceGrpc.UserServiceImplBase {
     @Autowired
     private UserRepository userRepository;
 
+
     @Override
     public void getUserGenre(UserSearchRequest request, StreamObserver<UserResponse> responseObserver) {
         UserResponse.Builder builder = UserResponse.newBuilder();
