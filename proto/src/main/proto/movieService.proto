@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "com.semarslan.grpc-app.movie";
+option java_package = "com.semarslan.grpcapp.movie";
 
 import "common/common.proto";
 
@@ -20,5 +20,5 @@ message MovieSearchResponse {
 }
 
 service MovieService {
-  rpc getMovies(MovieSearchRequest) returns (MovieSearchResponse) {}
+  rpc getMovies(MovieSearchRequest) returns (MovieSearchResponse);
 }

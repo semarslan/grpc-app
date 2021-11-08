@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "com.semarslan.grpc-app.user";
+option java_package = "com.semarslan.grpcapp.user";
 
 import "common/common.proto";
 
@@ -21,7 +21,7 @@ message UserGenreUpdateRequest {
 }
 
 service UserService {
-  rpc getUserGenre(UserSearchRequest) returns (UserResponse) {}
-  rpc updateUserGenre(UserGenreUpdateRequest) returns (UserResponse) {}
+  rpc getUserGenre(UserSearchRequest) returns (UserResponse);
+  rpc updateUserGenre(UserGenreUpdateRequest) returns (UserResponse);
 
 }
